@@ -21,4 +21,4 @@ git clone git@github.com:eramos3/Weather-Dashboard.git
 
 <!-- ![Weather-Dashboard Screenshot](./assets/images/dashboard.png) -->
 
-<!-- [Weather-Dashboard page](https://eramos3.github.io/work-day-scheduler/) -->
+[Weather-Dashboard page](https://eramos3.github.io/Weather-Dashboard/)
