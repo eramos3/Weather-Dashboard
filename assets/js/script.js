@@ -49,8 +49,10 @@ var historyButton = function () {
 };
 
 var getCityWeather = function (city) {
+    // makes site work on github pages 
+    var cors_api_host = 'cors-anywhere.herokuapp.com';
     // saves apiurl 
-    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=da34e9930b7599f040828dc43b9770ca";
+    var apiUrl = "https://" + cors_api_host + "/api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=da34e9930b7599f040828dc43b9770ca";
     // gets data from api url and checks to see if it went through, if so it executes displayWeather function if not it shows an error
     fetch(apiUrl)
         .then(function (response) {
@@ -73,7 +75,7 @@ var getCityWeather = function (city) {
 
 var getCityUv = function (lat, lon) {
     // saves apiurl 
-    var apiUv = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=da34e9930b7599f040828dc43b9770ca";
+    var apiUv = "https://" + cors_api_host + "/api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=da34e9930b7599f040828dc43b9770ca";
     // gets data from api url and checks to see if it went through, if so it executes displayWeather function if not it shows an error
     fetch(apiUv)
         .then(function (response) {
@@ -93,7 +95,7 @@ var getCityUv = function (lat, lon) {
 };
 
 var getCityForecast = function (lat, lon) {
-    var apiCity = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lat + "&units=imperial&exclude=hourly,minutely,current&appid=da34e9930b7599f040828dc43b9770ca";
+    var apiCity = "https://" + cors_api_host + "/api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lat + "&units=imperial&exclude=hourly,minutely,current&appid=da34e9930b7599f040828dc43b9770ca";
     fetch(apiCity)
         .then(function (response) {
             if (response.ok) {
