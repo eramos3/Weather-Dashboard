@@ -164,7 +164,7 @@ var displayForecast = function (forecast) {
     // loops through json response to get 5 day forecst
     for (i = 0; i < forecast.daily.length - 3; i++) {
         // creates col 
-        var col = $("<div>").addClass("col-lg-2 col-md-4 mt-5");
+        var col = $("<div>").addClass(" mt-5");
         // creates card
         var card = $("<div>").addClass("card bg-primary");
         // creates body
