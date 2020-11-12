@@ -17,8 +17,8 @@ THEN I am again presented with current and future conditions for that city<br>
 ```
 git clone git@github.com:eramos3/Weather-Dashboard.git
 ```
-<!-- [working deployed link recording](https://drive.google.com/file/d/1EOW7LJnmPg-iMrf8xIdB7Y7jmGIC3Pvs/view) -->
+[working deployed link recording](https://drive.google.com/file/d/1YGKn_moUuIFWGJ9B6L-Gdh3I-urqNRzm/view)
 
-<!-- ![Weather-Dashboard Screenshot](./assets/images/dashboard.png) -->
+![Weather-Dashboard Screenshot](./assets/images/dashboard.png)
 
 [Weather-Dashboard page](https://eramos3.github.io/Weather-Dashboard/)
