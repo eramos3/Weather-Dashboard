@@ -162,7 +162,7 @@ var displayForecast = function (forecast) {
     // clears container after next search clicked
     foreContainer.empty();
     // loops through json response to get 5 day forecst
-    for (i = 1; i < forecast.daily.length - 2; i++) {
+    for (i = 0; i < forecast.daily.length - 3; i++) {
         // creates col 
         var col = $("<div>").addClass("col-lg-2 col-md-4 mt-5");
         // creates card
