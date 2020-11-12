@@ -49,8 +49,6 @@ var historyButton = function () {
 };
 
 var getCityWeather = function (city) {
-    // makes site work on github pages 
-    var cors_api_host = 'cors-anywhere.herokuapp.com';
     // saves apiurl 
     var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=da34e9930b7599f040828dc43b9770ca";
     // gets data from api url and checks to see if it went through, if so it executes displayWeather function if not it shows an error
@@ -74,8 +72,6 @@ var getCityWeather = function (city) {
 };
 
 var getCityUv = function (lat, lon) {
-    // makes site work on github pages 
-    var cors_api_host = 'cors-anywhere.herokuapp.com';
     // saves apiurl 
     var apiUv = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=da34e9930b7599f040828dc43b9770ca";
     // gets data from api url and checks to see if it went through, if so it executes displayWeather function if not it shows an error
@@ -97,8 +93,6 @@ var getCityUv = function (lat, lon) {
 };
 
 var getCityForecast = function (lat, lon) {
-    // makes site work on github pages 
-    var cors_api_host = 'cors-anywhere.herokuapp.com';
     // saves api url
     var apiCity = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lat + "&units=imperial&exclude=hourly,minutely,current&appid=da34e9930b7599f040828dc43b9770ca";
     fetch(apiCity)
@@ -170,7 +164,7 @@ var displayForecast = function (forecast) {
     // loops through json response to get 5 day forecst
     for (i = 0; i < forecast.daily.length - 3; i++) {
         // creates col 
-        var col = $("<div>").addClass("col-2 mt-5");
+        var col = $("<div>").addClass("col-lg-2 col-md-4 mt-5");
         // creates card
         var card = $("<div>").addClass("card bg-primary");
         // creates body
