@@ -74,6 +74,8 @@ var getCityWeather = function (city) {
 };
 
 var getCityUv = function (lat, lon) {
+    // makes site work on github pages 
+    var cors_api_host = 'cors-anywhere.herokuapp.com';
     // saves apiurl 
     var apiUv = "https://" + cors_api_host + "/api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=da34e9930b7599f040828dc43b9770ca";
     // gets data from api url and checks to see if it went through, if so it executes displayWeather function if not it shows an error
@@ -95,6 +97,9 @@ var getCityUv = function (lat, lon) {
 };
 
 var getCityForecast = function (lat, lon) {
+    // makes site work on github pages 
+    var cors_api_host = 'cors-anywhere.herokuapp.com';
+    // saves api url
     var apiCity = "https://" + cors_api_host + "/api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lat + "&units=imperial&exclude=hourly,minutely,current&appid=da34e9930b7599f040828dc43b9770ca";
     fetch(apiCity)
         .then(function (response) {
