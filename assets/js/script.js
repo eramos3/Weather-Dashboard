@@ -94,7 +94,7 @@ var getCityUv = function (lat, lon) {
 
 var getCityForecast = function (lat, lon) {
     // saves api url
-    var apiCity = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lat + "&units=imperial&exclude=hourly,minutely,current&appid=da34e9930b7599f040828dc43b9770ca";
+    var apiCity = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=imperial&exclude=hourly,minutely,current&appid=da34e9930b7599f040828dc43b9770ca";
     fetch(apiCity)
         .then(function (response) {
             if (response.ok) {
