@@ -1,24 +1,24 @@
-# COVID-19 Information Hub
+# Weather-Dashboard
 
 ## Decription
 
-* GIVEN a covid information hub with dropdown selection<br>
-WHEN I search for a US State<br>
-THEN I am presented with current and total number of covid cases for that state<br>
-WHEN I view current covid cases for a state<br>
-THEN I am presented with the state name, the date, and total daily cases for that state<br>
-WHEN I view the covid cases for a state<br>
-THEN I am presented with the total number of positive results for the selected state and the total deaths for the state<br>
-WHEN I view the United States Totals<br>
-THEN I am presented with the total number of positive cases and deaths for the entire United States<br>
-WHEN I click on a state in the search history<br>
-THEN I am again presented with current and future conditions for that state<br>
+* GIVEN a weather dashboard with form inputs<br>
+WHEN I search for a city<br>
+THEN I am presented with current and future conditions for that city and that city is added to the search history<br>
+WHEN I view current weather conditions for that city<br>
+THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index<br>
+WHEN I view the UV index<br>
+THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe<br>
+WHEN I view future weather conditions for that city<br>
+THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity<br>
+WHEN I click on a city in the search history<br>
+THEN I am again presented with current and future conditions for that city<br>
 ## Setup
 ```
-git clone git@github.com:mooka0/covid19-info-hub.git
+git clone git@github.com:eramos3/Weather-Dashboard.git
 ```
-<!-- [working deployed link recording]() -->
+[working deployed link recording](https://drive.google.com/file/d/1YGKn_moUuIFWGJ9B6L-Gdh3I-urqNRzm/view)
 
-<!-- ![COVID-19 Information Hub Screenshot]() -->
+![Weather-Dashboard Screenshot](./assets/images/dashboard.png)
 
-[COVID-19 Information Hub page](https://mooka0.github.io/covid19-info-hub/)
+[Weather-Dashboard page](https://eramos3.github.io/Weather-Dashboard/)
