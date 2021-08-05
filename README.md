@@ -16,6 +16,12 @@ THEN I am again presented with current and future conditions for that city<br>
 ## Setup
 ```
 git clone git@github.com:eramos3/Weather-Dashboard.git
+
+## Built With
+* HTML
+* Javascript
+* Bootstrap
+* Open Weather API
 ```
 [working deployed link recording](https://drive.google.com/file/d/1YGKn_moUuIFWGJ9B6L-Gdh3I-urqNRzm/view)
 
